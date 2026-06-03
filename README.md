@@ -1,11 +1,11 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/[YOUR_GITHUB_USERNAME]/[YOUR_PUBLIC_REPO_NAME]/main/assets/logo-dark.png" alt="Leetrix Logo" width="120" />
+  <img src="https://raw.githubusercontent.com/oms13/Leetrix/main/assets/logo-dark.png" alt="Leetrix Logo" width="120" />
   
   # Leetrix - LeetCode Helper
   **The Zero-Config LeetCode to GitHub Synchronization Engine**
 
-  [![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-Available_Now-2cbb5d?style=for-the-badge&logo=google-chrome&logoColor=white)](https://chrome.google.com/webstore/detail/[YOUR_EXTENSION_ID])
-  [![GitHub Issues](https://img.shields.io/github/issues/[YOUR_GITHUB_USERNAME]/[YOUR_PUBLIC_REPO_NAME]?style=for-the-badge&color=ffa116)](https://github.com/[YOUR_GITHUB_USERNAME]/[YOUR_PUBLIC_REPO_NAME]/issues)
+  [![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-Available_Now-2cbb5d?style=for-the-badge&logo=google-chrome&logoColor=white)](https://chrome.google.com/webstore/detail/ojoinaecfhljjdjdcllpcklmeolgebck)
+  [![GitHub Issues](https://img.shields.io/github/issues/oms13/Leetrix?style=for-the-badge&color=ffa116)](https://github.com/oms13/Leetrix/issues)
   [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 </div>
 
@@ -47,7 +47,7 @@ Leetrix operates on a highly optimized decoupled architecture to ensure maximum 
 ## 🛠️ Installation & Setup
 
 ### 1. Install the Extension
-Download Leetrix directly from the [Chrome Web Store](https://chrome.google.com/webstore/detail/[YOUR_EXTENSION_ID]).
+Download Leetrix directly from the [Chrome Web Store](https://chrome.google.com/webstore/detail/ojoinaecfhljjdjdcllpcklmeolgebck).
 
 ### 2. Authenticate with GitHub
 1. Open the Leetrix extension popup.
@@ -86,7 +86,7 @@ Developer tools require absolute transparency. Leetrix is built with a zero-trus
 
 We welcome contributions to make Leetrix better! If you encounter a bug or have a feature request:
 
-1. Check the [Issues tab](https://github.com/[YOUR_GITHUB_USERNAME]/[YOUR_PUBLIC_REPO_NAME]/issues) to ensure it hasn't already been reported.
+1. Check the [Issues tab](https://github.com/oms13/Leetrix/issues) to ensure it hasn't already been reported.
 2. Click **New Issue**, provide a detailed description, steps to reproduce, and any relevant console logs.
 
 ---
