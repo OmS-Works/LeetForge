@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/oms13/Leetrix/main/assets/logo-dark.png" alt="Leetrix Logo" width="90" />
+  <img src="https://raw.githubusercontent.com/oms13/Leetrix/main/assets/icon-128.png" alt="Leetrix Logo" width="90" />
   
   # Leetrix - LeetCode Helper
   **The Zero-Config LeetCode to GitHub Synchronization Engine**
