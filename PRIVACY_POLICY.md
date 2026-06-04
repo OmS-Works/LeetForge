@@ -31,3 +31,5 @@ You have total control over your data. You can disconnect LeetForge at any time 
 
 ## 6. Contact Us
 If you have any questions about this Privacy Policy, please open an issue on our [GitHub Repository](https://github.com/[YOUR_GITHUB_USERNAME]/[YOUR_PUBLIC_REPO_NAME]/issues).
+
+"The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements."
