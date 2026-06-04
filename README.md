@@ -4,7 +4,7 @@
   # LeetForge - LeetCode Helper
   **The Zero-Config LeetCode to GitHub Synchronization Engine**
 
-  [![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-Available_Now-2cbb5d?style=for-the-badge&logo=google-chrome&logoColor=white)](https://chrome.google.com/webstore/detail/ojoinaecfhljjdjdcllpcklmeolgebck)
+  [![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-Available_Now-2cbb5d?style=for-the-badge&logo=google-chrome&logoColor=white)](https://chrome.google.com/webstore/detail/nhhicljojbjefmddallmbioocbbmkjgd)
   [![GitHub Issues](https://img.shields.io/github/issues/oms13/LeetForge?style=for-the-badge&color=ffa116)](https://github.com/oms13/LeetForge/issues)
   [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 </div>
@@ -47,7 +47,7 @@ LeetForge operates on a highly optimized decoupled architecture to ensure maximu
 ## 🛠️ Installation & Setup
 
 ### 1. Install the Extension
-Download LeetForge directly from the [Chrome Web Store](https://chrome.google.com/webstore/detail/ojoinaecfhljjdjdcllpcklmeolgebck).
+Download LeetForge directly from the [Chrome Web Store](https://chrome.google.com/webstore/detail/nhhicljojbjefmddallmbioocbbmkjgd).
 
 ### 2. Authenticate with GitHub
 1. Open the LeetForge extension popup.
