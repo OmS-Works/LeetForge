@@ -1,35 +1,59 @@
 # Privacy Policy for LeetForge
 
-**Last Updated:** [Insert Today's Date]
+**Effective Date:** July 4, 2026
 
 LeetForge ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how your data is collected, used, and protected when you use the LeetForge Chrome Extension.
 
-## 1. Data We Collect and How We Use It
-LeetForge is designed to be privacy-first. We collect the absolute minimum data required to synchronize your LeetCode solutions with your GitHub account.
+We are committed to protecting your privacy and ensuring transparency. LeetForge is designed to operate primarily on your local machine, minimizing off-device data transmission.
 
-* **GitHub Authentication:** We use Chrome's native `identity` API to authenticate you via GitHub OAuth. We securely store your encrypted OAuth access token and your selected GitHub username/avatar strictly to facilitate the syncing of your code.
-* **Website Content:** The extension reads the code you write strictly within the LeetCode code editor (`leetcode.com`) solely for the purpose of pushing it to your chosen GitHub repository or local hard drive. 
-* **Local Storage:** We use your browser's local storage to cache your settings, target repository, and daily sync counts. This data remains on your local machine.
+## 1. Information We Collect
 
-## 2. What We DO NOT Do
-* **We DO NOT sell your data.**
-* **We DO NOT track your browsing history.** * **We DO NOT inject telemetry or analytics trackers** (e.g., Google Analytics). 
-* **We DO NOT read your private GitHub repositories** beyond the exact repository you explicitly authorize us to push code to.
+LeetForge strictly limits data collection to what is necessary for the Extension to function. We collect and process the following information:
 
-## 3. Third-Party Services
-To facilitate our core functionality, LeetForge interacts with the following third-party services:
-* **GitHub API:** Used to authenticate your account and push code commits.
-* **Upstash (Redis):** Used strictly for anonymous, IP-based rate limiting to protect the GitHub API from spam.
+*   **GitHub Authentication Data:** When you authorize LeetForge via GitHub OAuth, we receive an OAuth access token. We also retrieve basic profile information (such as your GitHub username and avatar) to display within the Extension interface.
+*   **LeetCode Session Data:** The Extension reads problem details (title, difficulty, topic tags, descriptions), runtime/memory statistics, and your written code snippets directly from the active LeetCode DOM and network requests.
+*   **Local File System Data:** If you utilize the local save feature, LeetForge requests permission to access a specific local directory via the File System Access API. We store a persistent reference handle to this directory.
 
-## 4. Data Security
-Your GitHub OAuth token is encrypted using AES-256 encryption before being stored on our backend. It is only decrypted in isolated server memory for the exact millisecond required to execute a Git commit. 
+## 2. How We Use Your Information
 
-## 5. Your Rights & Data Deletion
-You have total control over your data. You can disconnect LeetForge at any time by:
-1. Clicking "Sign Out" within the LeetForge extension popup.
-2. Revoking LeetForge's OAuth access directly from your GitHub account settings (Settings > Applications > Authorized OAuth Apps).
+The data we collect is used exclusively to provide and improve the core functionality of LeetForge. We use your data to:
 
-## 6. Contact Us
-If you have any questions about this Privacy Policy, please open an issue on our [GitHub Repository](https://github.com/[YOUR_GITHUB_USERNAME]/[YOUR_PUBLIC_REPO_NAME]/issues).
+*   **Synchronize to GitHub:** Your LeetCode code snippets, problem descriptions, and performance statistics are formatted and pushed directly to your selected GitHub repository using the GitHub REST API.
+*   **Save Locally:** Your code is written to your local machine using the directory handle you explicitly authorized.
+*   **Prevent Duplicate Work:** We use local caching to track problem hashes and submission SHAs to avoid pushing duplicate files to your repository or local drive.
 
-"The use of information received from Google APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements."
+## 3. Data Storage and Security
+
+LeetForge is built with a "client-first" architecture to maximize data security:
+
+*   **Client-Side Storage:** Your GitHub OAuth token, GitHub repository selections, local directory handles, and problem caches are stored exclusively on your local device using Chrome's secure `chrome.storage.local` API and IndexedDB. 
+*   **Stateless Backend Authentication:** LeetForge utilizes a custom backend (`leet-forge-backend.vercel.app`) solely for completing the secure GitHub OAuth token exchange. This backend acts as a stateless pass-through; it **does not** log, store, or database your OAuth token, your GitHub identity, or your LeetCode code snippets.
+*   **No Telemetry:** We do not track your browsing history outside of the active `leetcode.com/problems/*` tabs required for the Extension to function.
+
+## 4. Third-Party Data Sharing
+
+**We do not sell, rent, or share your personal data with third parties.** 
+
+Your data is only transmitted to the specific third-party APIs required for the Extension to function:
+*   **GitHub API:** To authenticate your account and push your code commits.
+*   **LeetCode API:** To fetch problem context and submission success states.
+
+LeetForge's use and transfer of information received from Google APIs will adhere to the [Chrome Web Store User Data Policy](https://developer.chrome.com/docs/webstore/user_data/), including the Limited Use requirements.
+
+## 5. User Control and Data Deletion
+
+You have full control over your data and how LeetForge interacts with it:
+
+*   **Revoke GitHub Access:** You can instantly revoke LeetForge's access to your GitHub account at any time by navigating to your GitHub settings: *Settings > Applications > Authorized OAuth Apps*, and revoking the "LeetForge" application.
+*   **Clear Local Data:** Uninstalling the LeetForge extension from your Chrome browser will immediately delete all locally stored OAuth tokens, caches, and file system handles.
+*   **Local Files:** Files saved to your local machine by LeetForge remain under your control and must be deleted manually from your operating system if desired.
+
+## 6. Changes to This Privacy Policy
+
+We may update our Privacy Policy from time to time. Any changes will be reflected by updating the "Effective Date" at the top of this document. We advise you to review this Privacy Policy periodically for any changes.
+
+## 7. Contact Information
+
+If you have any questions, concerns, or suggestions regarding this Privacy Policy, please contact us at:
+
+*   **GitHub:** https://github.com/OmS-Works/LeetForge/issues
